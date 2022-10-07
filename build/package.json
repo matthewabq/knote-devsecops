@@ -5,16 +5,20 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "mongodb": "mongod"
+    "mongodb": "mongod",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "mongodb": "^3.2.7",
     "mongodb-prebuilt": "^6.5.0",
     "multer": "^1.4.1",
-    "pug": "^2.0.3"
-  }
+    "pug": "^3.0.1",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
